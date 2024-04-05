@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preprints</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        /* For example: */
+        .preprint {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Preprints</h1>
+        
+        <!-- Preprint 1 -->
+        <div class="preprint">
+            <h3>A comparison study of supervised learning techniques for the approximation of high dimensional functions and feedback control</h3>
+            <p>Mathias Oster, Luca Saluzzi, Tizian Wenzel</p>
+            <p>Abstract: Approximation of high dimensional functions is in the focus of machine learning and data-based scientific computing. In many applications, empirical risk minimisation techniques over nonlinear model classes are employed. Neural networks, kernel methods and tensor decomposition techniques are among the most popular model classes. We provide a numerical study comparing the performance of these methods on various high-dimensional functions with focus on optimal control problems, where the collection of the dataset is based on the application of the State-Dependent Riccati Equation.</p>
+            <p><a href="https://arxiv.org/abs/2402.01402">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Preprint 2 -->
+        <div class="preprint">
+            <h3>On the optimality of target-data-dependent kernel greedy interpolation in Sobolev Reproducing Kernel Hilbert Spaces</h3>
+            <p>Gabriele Santin, Tizian Wenzel, Bernard Haasdonk</p>
+            <p>Abstract: Kernel interpolation is a versatile tool for the approximation of functions from data, and it can be proven to have some optimality properties when used with kernels related to certain Sobolev spaces. In the context of interpolation, the selection of optimal function sampling locations is a central problem, both from a practical perspective, and as an interesting theoretical question. Greedy interpolation algorithms provide a viable solution for this task, being efficient to run and provably accurate in their approximation. In this paper we close a gap that is present in the convergence theory for these algorithms by employing a recent result on general greedy algorithms. This modification leads to new convergence rates which match the optimal ones when restricted to the -greedy target-data-independent selection rule, and can additionally be proven to be optimal when they fully exploit adaptivity (-greedy). Other than closing this gap, the new results have some significance in the broader setting of the optimality of general approximation algorithms in Reproducing Kernel Hilbert Spaces, as they allow us to compare adaptive interpolation with non-adaptive best nonlinear approximation.</p>
+            <p><a href="https://arxiv.org/abs/2307.09811">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Preprint 3 -->
+        <div class="preprint">
+            <h3>Sharp inverse estimates for radial basis function interpolation: One-to-one correspondence between smoothness and approximation rates</h3>
+            <p>Tizian Wenzel</p>
+            <p>Abstract: While direct statemets for kernel based approximation on domains using radial basis functions are well researched, there still seems to be a gap in comparison with corresponding inverse statements. In this paper we sharpen inverse statements and by this close a ``gap of " which was raised in the literature. In particular we show that for a large class of finitely smooth radial basis function kernels such as Mat\'ern or Wendland kernels, there exists a one-to-one correspondence between the smoothness of a function and its approximation rate via kernel interpolation: If a function can be approximation with a given rate, it has a corresponding smoothness and vice versa.</p>
+            <p><a href="https://arxiv.org/abs/2306.14618">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+
+        <!-- Preprint 4 -->
+        <div class="preprint">
+            <h3>Application of Deep Kernel Models for Certified and Adaptive RB-ML-ROM Surrogate Modeling</h3>
+            <p>Tizian Wenzel, Bernard Haasdonk, Hendrik Kleikamp, Mario Ohlberger, Felix Schindler</p>
+            <p>Abstract: In the framework of reduced basis methods, we recently introduced a new certified hierarchical and adaptive surrogate model, which can be used for efficient approximation of input-output maps that are governed by parametrized partial differential equations. This adaptive approach combines a full order model, a reduced order model and a machine-learning model. In this contribution, we extend the approach by leveraging novel kernel models for the machine learning part, especially structured deep kernel networks as well as two layered kernel models. We demonstrate the usability of those enhanced kernel models for the RB-ML-ROM surrogate modeling chain and highlight their benefits in numerical experiments.</p>
+            <p><a href="https://arxiv.org/abs/2302.14526">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+
+        <!-- Preprint 5 -->
+        <div class="preprint">
+            <h3>Adaptive meshfree solution of linear partial differential equations with PDE-greedy kernel methods</h3>
+            <p>Tizian Wenzel, Daniel Winkle, Gabriele Santin, Bernard Haasdonk</p>
+            <p>Abstract: We consider the meshless solution of PDEs via symmetric kernel collocation by using greedy kernel methods. In this way we avoid the need for mesh generation, which can be challenging for non-standard domains or manifolds. We introduce and discuss different kind of greedy selection criteria, such as the PDE-P -greedy and the PDE-f -greedy for collocation point selection. Subsequently we analyze the convergence rates of these algorithms and provide bounds on the approximation error in terms of the number of greedily selected points. Especially we prove that target-data dependent algorithms, i.e. those using knowledge of the right hand side functions of the PDE, exhibit faster convergence rates. The provided analysis is applicable to PDEs both on domains and manifolds. This fact and the advantages of target-data dependent algorithms are highlighted by numerical examples.</p>
+            <p><a href="https://arxiv.org/abs/2207.13971">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+
+        <!-- Preprint 6 -->
+        <div class="preprint">
+            <h3>Stability of convergence rates: Kernel interpolation on non-Lipschitz domains</h3>
+            <p>Tizian Wenzel, Gabriele Santin, Bernard Haasdonk</p>
+            <p>Abstract: Error estimates for kernel interpolation in Reproducing Kernel Hilbert Spaces (RKHS) usually assume quite restrictive properties on the shape of the domain, especially in the case of infinitely smooth kernels like the popular Gaussian kernel. In this paper we leverage an analysis of greedy kernel algorithms to prove that it is possible to obtain convergence results (in the number of interpolation points) for kernel interpolation for arbitrary domains , thus allowing for non-Lipschitz domains including e.g. cusps and irregular boundaries. Especially we show that, when going to a smaller domain , the convergence rate does not deteriorate - i.e. the convergence rates are stable with respect to going to a subset. The impact of this result is explained on the examples of kernels of finite as well as infinite smoothness like the Gaussian kernel. A comparison to approximation in Sobolev spaces is drawn, where the shape of the domain has an impact on the approximation properties. Numerical experiments illustrate and confirm the experiments.</p>
+            <p><a href="https://arxiv.org/abs/2203.12532">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+
+        <!-- Preprint 7 -->
+        <div class="preprint">
+            <h3>Universality and optimality of structured deep kernel networks</h3>
+            <p>Tizian Wenzel, Gabriele Santin, Bernard Haasdonk</p>
+            <p>Abstract: Kernel based methods yield approximation models that are flexible, efficient and powerful. In particular, they utilize fixed feature maps of the data, being often associated to strong analytical results that prove their accuracy. On the other hand, the recent success of machine learning methods has been driven by deep neural networks (NNs). They achieve a significant accuracy on very high-dimensional data, in that they are able to learn also efficient data representations or data-based feature maps. In this paper, we leverage a recent deep kernel representer theorem to connect the two approaches and understand their interplay. In particular, we show that the use of special types of kernels yield models reminiscent of neural networks that are founded in the same theoretical framework of classical kernel methods, while enjoying many computational properties of deep neural networks. Especially the introduced Structured Deep Kernel Networks (SDKNs) can be viewed as neural networks with optimizable activation functions obeying a representer theorem. Analytic properties show their universal approximation properties in different asymptotic regimes of unbounded number of centers, width and depth. Especially in the case of unbounded depth, the constructions is asymptotically better than corresponding constructions for ReLU neural networks, which is made possible by the flexibility of kernel approximation.</p>
+            <p><a href="https://arxiv.org/abs/2105.07228">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+
+
+
+        <!-- Add more preprints as needed -->
+
+    </div>
+
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

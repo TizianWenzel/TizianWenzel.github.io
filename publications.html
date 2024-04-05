@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        /* For example: */
+        .publication {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Publications</h1>
+        
+        <!-- Publication 1 -->
+        <div class="publication">
+            <h3>Data-driven kernel designs for optimized greedy schemes: A machine learning perspective</h3>
+            <p>Tizian Wenzel, Francesco Marchetti, Emma Perracchione</p>
+            <p>Abstract: Thanks to their easy implementation via radial basis functions (RBFs), meshfree kernel methods have proved to be an effective tool for, e.g., scattered data interpolation, PDE collocation, and classification and regression tasks. Their accuracy might depend on a length scale hyperparameter, which is often tuned via cross-validation schemes. Here we leverage approaches and tools from the machine learning community to introduce two-layered kernel machines, which generalize the classical RBF approaches that rely on a single hyperparameter. Indeed, the proposed learning strategy returns a kernel that is optimized not only in the Euclidean directions, but that further incorporates kernel rotations. The kernel optimization is shown to be robust by using recently improved calculations of cross-validation scores. Finally, the use of greedy approaches, and specifically of the vectorial kernel orthogonal greedy algorithm (VKOGA), allows us to construct an optimized basis that adapts to the data. Beyond a rigorous analysis on the convergence of the so-constructed two-layered (2L)-KOGA, its benefits are highlighted on both synthesized and real benchmark datasets.</p>
+            <p><a href="https://epubs.siam.org/doi/abs/10.1137/23M1551201">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="publication">
+            <h3>Goal‐Oriented Two‐Layered Kernel Models as Automated Surrogates for Surface Kinetics in Reactor Simulations</h3>
+            <p>Felix Döppel, Tizian Wenzel, Robin Herkert, Bernard Haasdonk, Martin Votsmeier</p>
+            <p>Abstract: Multi‐scale modeling allows the description of real reactive systems under industrially relevant conditions. However, its application to rational catalyst and reactor design is hindered by the prohibitively high computational cost associated with the chemical kinetics on the catalyst scale. Here, the computational cost is drastically reduced by introducing goal‐oriented kernel models that serve as surrogates for the chemical kinetics. This special model type allows for automated training set design and reliable results, even outside the training region. Therefore, it can be envisioned as a plug‐and‐play solution for accelerating reactive flow simulations with guaranteed accuracy.</p>
+            <p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/cite.202300178">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Publication 3 -->
+        <div class="publication">
+            <h3>A new method to design energy-conserving surrogate models for the coupled, nonlinear responses of intervertebral discs</h3>
+            <p>Maria Hammer, Tizian Wenzel, Gabriele Santin, Laura Meszaros-Beller, Judith Paige Little, Bernard Haasdonk, Syn Schmittr</p>
+            <p>Abstract: The aim of this study was to design physics-preserving and precise surrogate models of the nonlinear elastic behaviour of an intervertebral disc (IVD). Based on artificial force-displacement data sets from detailed finite element (FE) disc models, we used greedy kernel and polynomial approximations of second, third and fourth order to train surrogate models for the scalar force-torque -potential. Doing so, the resulting models of the elastic IVD responses ensured the conservation of mechanical energy through their structure. At the same time, they were capable of predicting disc forces in a physiological range of motion and for the coupling of all six degrees of freedom of an intervertebral joint. The performance of all surrogate models for a subject-specific L45 disc geometry was evaluated both on training and test data obtained from uncoupled (one-dimensional), weakly coupled (two-dimensional), and random movement trajectories in the entire six-dimensional (6d) physiological displacement range, as well as on synthetic kinematic data. We observed highest precisions for the kernel surrogate followed by the fourth-order polynomial model. Both clearly outperformed the second-order polynomial model which is equivalent to the commonly used stiffness matrix in neuro-musculoskeletal simulations. Hence, the proposed model architectures have the potential to improve the accuracy and, therewith, validity of load predictions in neuro-musculoskeletal spine models.</p>
+            <p><a href="https://link.springer.com/article/10.1007/s10237-023-01804-4">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Publication 4 -->
+        <div class="publication">
+            <h3>A new certified hierarchical and adaptive RB-ML-ROM surrogate model for parametrized PDEs</h3>
+            <p>Bernard Haasdonk, Hendrik Kleikamp, Mario Ohlberger, Felix Schindler, Tizian Wenzel</p>
+            <p>Abstract: We present a new surrogate modeling technique for efficient approximation of input-output maps governed by parametrized PDEs. The model is hierarchical as it is built on a full order model, reduced order model (ROM), and machine learning (ML) model chain. The model is adaptive in the sense that the ROM and ML model are adapted on the fly during a sequence of parametric requests to the model. To allow for a certification of the model hierarchy, as well as to control the adaptation process, we employ rigorous a posteriori error estimates for the ROM and ML models. In particular, we provide an example of an ML-based model that allows for rigorous analytical quality statements. We demonstrate the efficiency of the modeling chain on a Monte Carlo and a parameter-optimization example. Here, the ROM is instantiated by Reduced Basis methods, and the ML model is given by a neural network or by a kernel model using vectorial kernel orthogonal greedy algorithms.</p>
+            <p><a href="https://epubs.siam.org/doi/abs/10.1137/22M1493318">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Publication 5 -->
+        <div class="publication">
+            <h3>Analysis of Target Data-Dependent Greedy Kernel Algorithms: Convergence Rates for f-, f*P and f/P-Greedy</h3>
+            <p>Tizian Wenzel, Gabriele Santin, Bernard Haasdonk</p>
+            <p>Abstract: Data-dependent greedy algorithms in kernel spaces are known to provide fast converging interpolants, while being extremely easy to implement and efficient to run. Despite this experimental evidence, no detailed theory has yet been presented. This situation is unsatisfactory, especially when compared to the case of the data-independent P-greedy algorithm, for which optimal convergence rates are available, despite its performances being usually inferior to the ones of target data-dependent algorithms. In this work, we fill this gap by first defining a new scale of greedy algorithms for interpolation that comprises all the existing ones in a unique analysis, where the degree of dependency of the selection criterion on the functional data is quantified by a real parameter. We then prove new convergence rates where this degree is taken into account, and we show that, possibly up to a logarithmic factor, target data-dependent selection strategies provide faster convergence. In particular, for the first time we obtain convergence rates for target data adaptive interpolation that are faster than the ones given by uniform points, without the need of any special assumption on the target function. These results are made possible by refining an earlier analysis of greedy algorithms in general Hilbert spaces. The rates are confirmed by a number of numerical examples.</p>
+            <p><a href="https://link.springer.com/article/10.1007/s00365-022-09592-3">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Publication 6 -->
+        <div class="publication">
+            <h3>A full order, reduced order and machine learning model pipeline for efficient prediction of reactive flows</h3>
+            <p>Pavel Gavrilenko, Bernard Haasdonk, Oleg Iliev, Mario Ohlberger, Felix Schindler, Pavel Toktaliev, Tizian Wenzel, Maha Youssef</p>
+            <p>Abstract: We present an integrated approach for the use of simulated data from full order discretization as well as projection-based Reduced Basis reduced order models for the training of machine learning approaches, in particular Kernel Methods, in order to achieve fast, reliable predictive models for the chemical conversion rate in reactive flows with varying transport regimes.</p>
+            <p><a href="https://link.springer.com/chapter/10.1007/978-3-030-97549-4_43">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Publication 6 -->
+        <div class="publication">
+            <h3>Structured deep kernel networks for data-driven closure terms of turbulent flows</h3>
+            <p>Tizian Wenzel, Marius Kurz, Andrea Beck, Gabriele Santin, Bernard Haasdonk</p>
+            <p>Abstract: Standard kernel methods for machine learning usually struggle when dealing with large datasets. We review a recently introduced Structured Deep Kernel Network (SDKN) approach that is capable of dealing with high-dimensional and huge datasets - and enjoys typical standard machine learning approximation properties.
+We extend the SDKN to combine it with standard machine learning modules and compare it with Neural Networks on the scientific challenge of data-driven prediction of closure terms of turbulent flows. We show experimentally that the SDKNs are capable of dealing with large datasets and achieve near-perfect accuracy on the given application.</p>
+            <p><a href="https://link.springer.com/chapter/10.1007/978-3-030-97549-4_47">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Publication 7 -->
+        <div class="publication">
+            <h3>A novel class of stabilized greedy kernel approximation algorithms: Convergence, stability and uniform point distribution</h3>
+            <p>Tizian Wenzel, Gabriele Santin, Bernard Haasdonk</p>
+            <p>Abstract: Kernel based methods provide a way to reconstruct potentially high-dimensional functions from meshfree samples, i.e., sampling points and corresponding target values. A crucial ingredient for this to be successful is the distribution of the sampling points. Since the computation of an optimal selection of sampling points may be an infeasible task, one promising option is to use greedy methods.
+
+Although these methods may be very effective, depending on the specific greedy criterion the chosen points might quickly lead to instabilities in the computation. To circumvent this problem, we introduce and investigate a new class of stabilized greedy kernel algorithms, which can be used to create a scale of new selection strategies.
+
+We analyze these algorithms, and in particular we prove convergence results and quantify in a precise way the distribution of the selected points. These results allow to prove, in the case of certain Sobolev kernels, that the algorithms have optimal stability and optimal convergence rates, including for functions outside the native space of the kernel. The results also apply to the case of the usual
+-greedy algorithm, significantly improving state-of-the-art results available in the literature. Illustrative experiments are presented that support the theoretical findings and show improvements of the stabilized algorithms in terms of accuracy due to improved stability.</p>
+            <p><a href="https://www.sciencedirect.com/science/article/pii/S0021904520301441">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+        <!-- Publication 8 -->
+        <div class="publication">
+            <h3>Biomechanical surrogate modelling using stabilized vectorial greedy kernel methods</h3>
+            <p>Bernard Haasdonk, Tizian Wenzel, Gabriele Santin, Syn Schmitt</p>
+            <p>Abstract: Greedy kernel approximation algorithms are successful techniques for sparse and accurate data-based modelling and function approximation. Based on a recent idea of stabilization (Wenzel et al., A novel class of stabilized greedy kernel approximation algorithms: convergence, stability & uniform point distribution. e-prints. arXiv:1911.04352, 2019) of such algorithms in the scalar output case, we here consider the vectorial extension built on VKOGA (Wirtz and Haasdonk, Dolomites Res Notes Approx 6:83–100, 2013. We introduce the so called γ-restricted VKOGA, comment on analytical properties and present numerical evaluation on data from a clinically relevant application, the modelling of the human spine. The experiments show that the new stabilized algorithms result in improved accuracy and stability over the non-stabilized algorithms.</p>
+            <p><a href="https://link.springer.com/chapter/10.1007/978-3-030-55874-1_49">Read More</a></p> <!-- Replace '#' with the URL to the full paper -->
+        </div>
+
+
+
+
+        <!-- Add more publications as needed -->
+
+    </div>
+
+
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
